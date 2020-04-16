@@ -1,0 +1,88 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+    color: hsl(234, 12%, 34%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.header p:first-child {
+    font-size: 29px;
+    margin-bottom: 0;
+}
+
+.header h1 {
+    margin-top: 0;
+    font-weight: 900;
+}
+
+.header p:last-child {
+    font-size: 18px;
+    width: 65%;
+    margin: 0 auto 20px;
+    color: hsl(229, 6%, 66%);
+}
+
+.content {
+    margin-top: 50px;
+    display: flex;
+}
+
+.cont {
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lala {
+    padding: 0 15px;
+    width: 70%;
+    margin: 20px auto;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.cont:nth-child(1) .lala {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.cont:nth-child(2) .lala:nth-child(1) {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.cont:nth-child(2) .lala:nth-child(2) {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.cont:nth-child(3) .lala {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.lala h3 {
+    font-weight: 600;
+}
+
+.lala .icon {
+    text-align: right;
+    margin: 10px;
+}
+
+@media only screen and (max-width:700px) {
+    .content {
+        flex-wrap: wrap;
+    }
+    .cont {
+        width: 100%;
+    }
+}
